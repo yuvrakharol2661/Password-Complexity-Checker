@@ -1,16 +1,16 @@
 import re
 
-password = input("Enter Password: ")
+pas = input("Enter Password: ")
 strength = 0
-if len(password) >= 8:
+if len(pas) >= 8:
     strength += 1
-if re.search("[A-Z]", password):
+if re.search("[A-Z]", pas):
     strength += 1
-if re.search("[a-z]", password):
+if re.search("[a-z]", pas):
     strength += 1
-if re.search("[0-9]", password):
+if re.search("[0-9]", pas):
     strength += 1
-if re.search("[@#$%^&*!]", password):
+if re.search("[@#$%^&*!]", pas):
     strength += 1
 if strength == 5:
     print("Strong Password")
